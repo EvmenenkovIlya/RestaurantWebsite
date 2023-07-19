@@ -1,5 +1,7 @@
 @import "common";
+@import "dishes";
 @import "footer";
+@import "target";
 
 #main {
   height: 685px;
@@ -23,11 +25,34 @@
   .start {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
   }
 
   .information {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      color: $normal-color;
+      font-family: $secondary-font;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+    }
+  }
+
+  .play-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 25px 6px rgba(34, 60, 80, 0.3);
   }
 
   .get-started {
@@ -46,154 +71,28 @@
 }
 
 #how-it-works {
-  height: 600px;
-  border: 3px solid green;
-}
-
-#diches {
   height: 100%;
   background-color: white;
-  padding: 100px 135px 115px 135px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 
-  .cards-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 270px);
-    justify-content: space-between;
-    row-gap: 45px;
-    margin: 20px 0;
+  h2 {
+    margin-top: 90px;
+  }
 
-    .card-item {
-      width: 270px;
-      height: 320px;
-      border-radius: 10px;
-      border: 0.699px solid rgba(112, 112, 112, 0.2);
-      padding: 15px 20px;
+  .steps-container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+
+    .step-item {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap: 5px;
-
-      .food-img {
-        width: 130px;
-        height: 130px;
-        align-self: center;
-      }
-
-      .item-name {
-        color: $normal-color;
-        font-family: $main-font;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 22.363px; /* 124.24% */
-      }
-
-      .item-description {
-        font-family: $secondary-font;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 20px; /* 166.667% */
-      }
-
-      .info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 5px;
-      }
-
-      .price {
-        color: $normal-color;
-        font-size: 16px;
-        font-weight: 600;
-      }
-
-      .fill {
-        color: #f9a755;
-      }
-      
-      &:hover {
-        border: 2px solid $accent-color;
-        box-shadow: -1px 0px 50px 5px rgba(34, 60, 80, 0.3);
-      }
-
-      .card-buttons {
-        display: flex;
-        gap: 10px;
-      }
+      align-items: center;
+      gap: 20px;
     }
-  }
-
-  .pagination {
-    display: flex;
-    gap: 30px;
-  }
-
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    background-color: white;
-    border: 1px solid #eaeced;
-    color: #667085;
-    font-family: $secondary-font;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-    &.active {
-      color: white;
-      background-color: $accent-color;
-    }
-  }
-}
-
-#target {
-  overflow: hidden;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 135px;
-
-  img {
-    position: absolute;
-    bottom: -55px;
-    z-index: -1;
-  }
-
-  .target-info {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .order-now {
-    display: inline-flex;
-    padding: 16px 19px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    gap: 8px;
-    align-self: start;
-    background: #fcc647;
-    color: white;
-    text-align: center;
-    font-family: $secondary-font;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 12px; /* 75% */
-    border-width: 0;
   }
 }
 
