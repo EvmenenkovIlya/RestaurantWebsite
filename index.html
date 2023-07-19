@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +24,7 @@
         </a>
       </div>
       <nav>
-        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link active-link">Home</a>
         <a href="#" class="nav-link">About us</a>
         <a href="#" class="nav-link">Menu</a>
         <a href="#" class="nav-link">Blog</a>
@@ -29,67 +32,252 @@
       </nav>
     </header>
     <section id="main">
-        <div class="main-info">
-            <button class="fast-delivery">Fast Delivery</button>
-            <h1>Discover Your Favourite<br>
-                Food and <accent class="accent">Test Forever</accent>
-            </h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                industry. Lorem Ipsum has been the industry's standard dummy<br>
-                text ever since the 1500s. 
-            </p>
-            <div class="start">
-                <button class="get-started">Get Started</button>
-                <div class="information">
-                    <img src="./assets/play-icon.svg" alt="">
-                    <a href="#">More Information</a>
-                </div>
-            </div>
+      <div class="main-info">
+        <button class="fast-delivery">Fast Delivery</button>
+        <h1>
+          Discover Your Favourite<br />
+          Food and <accent class="accent">Test Forever</accent>
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting<br />
+          industry. Lorem Ipsum has been the industry's standard dummy<br />
+          text ever since the 1500s.
+        </p>
+        <div class="start">
+          <button class="get-started">Get Started</button>
+          <div class="information">
+            <img src="./assets/play-icon.svg" alt="" />
+            <a href="#">More Information</a>
+          </div>
         </div>
-        <div class="main-img">
-            <img src="./assets/main-img.png" alt="" class="main-img">
-        </div>
+      </div>
+      <div class="main-img">
+        <img src="./assets/main-img.png" alt="" class="main-img" />
+      </div>
     </section>
-    <section id="how-it-works">
-
-    </section>
+    <section id="how-it-works"></section>
     <section id="diches">
       <h2>Our Delicious Dish</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+      <p class="text-center">
+        Lorem Ipsum is simply dummy text of the printing and typesetting<br />
         industry. Lorem Ipsum has been the industry
       </p>
-      <div class="cards">
-
+      <div class="cards-container">
+        <div class="card-item">
+          <img src="./assets/salmon.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Salmon</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$7.10</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/french-fries.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">French Fries</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$5.30</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/noodles.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Noodles</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$4.20</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/bowl.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Bowl</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$6.50</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/noodles.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Pasta</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$3.90</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/pizza.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Pizza</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$4.99</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/salmon.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">New York Vega</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$5.10</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="./assets/another-bowl.png" alt="" class="food-img" />
+          <div class="stars">
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star fill"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="item-name">Another-bowl</p>
+          <p class="item-description">
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting....
+          </p>
+          <div class="info">
+            <p class="price">$5.75</p>
+            <div class="card-buttons">
+              <img src="./assets/shopping-basket-btn.svg" alt="">
+              <img src="./assets/share-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="pagination">
-        
+        <div class="circle btn arrow-left">
+          <img src="./assets/arrow-left.svg" alt="" />
+        </div>
+        <div class="circle btn active">1</div>
+        <div class="circle btn">2</div>
+        <div class="circle btn">3</div>
+        <div class="circle btn">4</div>
+        <div class="circle btn">5</div>
+        <div class="circle btn arrow-right">
+          <img src="./assets/arrow-right.svg" alt="" />
+        </div>
       </div>
     </section>
     <section id="target">
-        <div>
-            <img src="./assets/delivery-man.png" alt="">
-        </div>
-        <div class="target-info">
-            <button class="our-target">Our Target</button>
-            <h2>
-                We Earn Your Trust and are<br>
-                Diligent in Your Case
-            </h2>
-            <p>
-                When an unknown printer took a galley of type and scrambled it to<br>
-                make a type specimen book. It has survived not only five centuries,<br>
-                but also the leap into electronic typesetting.
-            </p>
-            <p>
-                It was popularised in the 1960s with the release of Letraset sheets<br>
-                containing Lorem Ipsum passages, and more recently with desktop<br>
-                publishing software like Aldus PageMaker including versions of Lorem<br>
-                Ipsum.
-            </p>
-            <button class="order-now">Order Now</button>
-        </div>
+      <div>
+        <img src="./assets/delivery-man.png" alt="" />
+      </div>
+      <div class="target-info">
+        <button class="our-target">Our Target</button>
+        <h2>
+          We Earn Your Trust and are<br />
+          Diligent in Your Case
+        </h2>
+        <p>
+          When an unknown printer took a galley of type and scrambled it to<br />
+          make a type specimen book. It has survived not only five centuries,<br />
+          but also the leap into electronic typesetting.
+        </p>
+        <p>
+          It was popularised in the 1960s with the release of Letraset sheets<br />
+          containing Lorem Ipsum passages, and more recently with desktop<br />
+          publishing software like Aldus PageMaker including versions of
+          Lorem<br />
+          Ipsum.
+        </p>
+        <button class="order-now">Order Now</button>
+      </div>
     </section>
     <section id="mobile">
       <div class="discount">
@@ -118,13 +306,13 @@
     <footer>
       <div class="contacts">
         <div class="contact-item">
-            <img src="./assets/email-icon.svg" alt="">
-            <a href="mailto:">info@youremail.com</a>
+          <img src="./assets/email-icon.svg" alt="" />
+          <a href="mailto:">info@youremail.com</a>
         </div>
         <div class="hr"></div>
         <div class="contact-item">
-            <img src="./assets/call-icon.svg" alt="">
-            <a href="tel:+">+880 321 655 9985</a>
+          <img src="./assets/call-icon.svg" alt="" />
+          <a href="tel:+">+880 321 655 9985</a>
         </div>
       </div>
       <div class="footer-container">
@@ -168,10 +356,10 @@
         </div>
         <div class="footer-subscribe">
           <p class="headline">news letter</p>
-          <div class="text">
+          <p class="text">
             Subscribe our newsletter to get our latest<br />
             update & news
-          </div>
+          </p>
           <div class="subscription">
             <input
               type="email"

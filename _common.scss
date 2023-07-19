@@ -38,12 +38,12 @@ nav {
 
 
 footer {
-  height: 540px;
+  height: 100%;
   background-color: #232233;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 0 135px 18px 135px;
+  padding: 0 135px;
   justify-content: space-between;
 }
 
@@ -53,7 +53,7 @@ a {
 }
 
 h1 {
-  color: #3C3C3C;
+  color: $normal-color;
   font-family: $main-font;
   font-size: 48px;
   font-style: normal;
@@ -99,7 +99,7 @@ button {
 
 }
 
-.active {
+.active-link {
   color: $accent-color;
   text-decoration: underline 3px;
 }
@@ -123,4 +123,8 @@ button {
 .vertical-line {
     border-left: 1px solid white;
     height: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
