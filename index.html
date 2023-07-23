@@ -19,25 +19,30 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#">
+        <a href="index.html">
           Tammy
-          <accent class="accent">Food</accent>
+          <span class="accent">Food</span>
         </a>
       </div>
-      <nav>
+      <nav class="unvisible">
         <a href="#" class="nav-link active-link">Home</a>
         <a href="#" class="nav-link">About us</a>
         <a href="#" class="nav-link">Menu</a>
         <a href="#" class="nav-link">Blog</a>
         <a href="#" class="nav-link">Contact Us</a>
       </nav>
+      <button class="icon-btn mobile-only">
+        <img src="./assets/burger-menu.svg" onclick="showMenu()" />
+      </button>
     </header>
     <section id="main">
       <div class="main-info">
-        <button class="fast-delivery">Fast Delivery</button>
+        <div>
+          <button class="fast-delivery">Fast Delivery</button>
+        </div>
         <h1>
           Discover Your Favourite<br />
-          Food and <accent class="accent">Test Forever</accent>
+          Food and <span class="accent">Test Forever</span>
         </h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting<br />
@@ -45,12 +50,16 @@
           text ever since the 1500s.
         </p>
         <div class="start">
-          <button class="get-started">Get Started</button>
+          <div>
+            <button class="get-started" id="get-started" onclick="getStarted()">
+              Get Started
+            </button>
+          </div>
           <div class="information">
             <div class="play-circle">
               <img src="./assets/play-icon.svg" alt="" />
             </div>
-            <a href="#">More Information</a>
+            <a href="#" id="more-info">More Information</a>
           </div>
         </div>
       </div>
@@ -64,10 +73,11 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting<br />
         industry. Lorem Ipsum has been the industry
       </p>
-      <img src="./assets/steps.svg" alt="" />
+      <img src="./assets/steps.svg" class="computer-only" />
       <div class="steps-container">
         <div class="step-item">
           <h3>Order Now</h3>
+          <img src="./assets/step-one.png" alt="" class="mobile-only" />
           <p class="text-center">
             Lorem Ipsum is simply dummy text of the<br />
             printing and typesetting industry. Lorem Ipsum<br />
@@ -76,6 +86,7 @@
         </div>
         <div class="step-item">
           <h3>Get Delivery</h3>
+          <img src="./assets/step-two.png" alt="" class="mobile-only" />
           <p class="text-center">
             Lorem Ipsum is simply dummy text of the<br />
             printing and typesetting industry. Lorem Ipsum<br />
@@ -84,6 +95,7 @@
         </div>
         <div class="step-item">
           <h3>Payment</h3>
+          <img src="./assets/step-three.png" alt="" class="mobile-only" />
           <p class="text-center">
             Lorem Ipsum is simply dummy text of the<br />
             printing and typesetting industry. Lorem Ipsum<br />
@@ -92,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section id="diches">
+    <section id="dishes">
       <h2>Our Delicious Dish</h2>
       <p class="text-center">
         Lorem Ipsum is simply dummy text of the printing and typesetting<br />
@@ -231,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item computer-only">
           <img src="./assets/salmon.png" alt="" class="food-img" />
           <div class="stars">
             <i class="fa-solid fa-star fill"></i>
@@ -240,7 +252,7 @@
             <i class="fa-solid fa-star fill"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <p class="item-name">New York Vega</p>
+          <p class="item-name">York Vega</p>
           <p class="item-description">
             Lorem Ipsum is simply dummy text of<br />
             the printing and typesetting....
@@ -253,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item computer-only">
           <img src="./assets/another-bowl.png" alt="" class="food-img" />
           <div class="stars">
             <i class="fa-solid fa-star fill"></i>
@@ -283,19 +295,21 @@
         <div class="circle btn active">1</div>
         <div class="circle btn">2</div>
         <div class="circle btn">3</div>
-        <div class="circle btn">4</div>
-        <div class="circle btn">5</div>
+        <div class="circle btn computer-only">4</div>
+        <div class="circle btn computer-only">5</div>
         <div class="circle btn arrow-right">
           <img src="./assets/arrow-right.svg" alt="" />
         </div>
       </div>
     </section>
     <section id="target">
-      <div>
+      <div class="computer-only">
         <img src="./assets/delivery-man.png" alt="" />
       </div>
       <div class="target-info">
-        <button class="our-target">Our Target</button>
+        <div>
+          <button class="our-target">Our Target</button>
+        </div>
         <h2>
           We Earn Your Trust and are<br />
           Diligent in Your Case
@@ -312,7 +326,9 @@
           Lorem<br />
           Ipsum.
         </p>
-        <button class="order-now">Order Now</button>
+        <div>
+          <button class="order-now">Order Now</button>
+        </div>
       </div>
     </section>
     <section id="mobile">
@@ -340,7 +356,7 @@
       </div>
     </section>
     <footer>
-      <div class="contacts">
+      <div class="contacts /*computer-only*/">
         <div class="contact-item">
           <img src="./assets/email-icon.svg" alt="" />
           <a href="mailto:">info@youremail.com</a>
@@ -356,7 +372,7 @@
           <div class="footer-logo">
             <a href="#">
               Tammy
-              <accent class="accent">Food</accent>
+              <span class="accent">Food</span>
             </a>
           </div>
           <p class="text">
@@ -415,5 +431,6 @@
         <div>Copyright 2021 .Tammy Food. All Right Reserved.</div>
       </div>
     </footer>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

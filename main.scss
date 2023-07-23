@@ -4,7 +4,7 @@
 @import "target";
 
 #main {
-  height: 685px;
+  height: 100%;
   padding: 100px 135px;
   display: flex;
   position: relative;
@@ -109,26 +109,10 @@
     gap: 50px;
   }
 
-  h2 {
-    color: $normal-color;
-    font-family: $main-font;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  p {
-    color: #667085;
-    font-family: $secondary-font;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-  }
-
   .apps {
     display: flex;
     gap: 25px;
   }
 }
+
+@import "mobile";

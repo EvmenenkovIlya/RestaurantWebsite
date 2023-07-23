@@ -1,0 +1,216 @@
+@media (max-width: 850px) {
+  body {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    br {
+      display: none;
+    }
+
+    .copyright {
+      font-size: 12px;
+      padding: 0;
+    }
+
+    .computer-only {
+      display: none !important;
+    }
+
+    .unvisible {
+      display: none;
+    }
+  }
+  header {
+    padding: 20px 20px;
+
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      gap: 20px;
+      top: 70px;
+      width: 70%;
+      border-radius: 20px;
+      border: 1px solid $normal-color;
+      z-index: 1;
+
+      & > :first-child {
+        margin-top: 10px;
+      }
+
+      & > :last-child {
+        margin-bottom: 10px;
+      }
+
+      a {
+        padding-left: 25%;
+      }
+    }
+  }
+
+  #main {
+    padding: 20px 20px;
+    background-image: url("./assets/main-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .main-img {
+      display: none;
+    }
+
+    .main-info {
+      gap: 20px;
+      align-items: center;
+    }
+
+    .get-started {
+      font-size: 15px;
+      height: 40px;
+      border: 1px solid $normal-color;
+    }
+    .start {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #more-info {
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    p {
+      color: $normal-color;
+    }
+
+    .accent {
+      -webkit-text-stroke: 1px black;
+    }
+  }
+
+  #how-it-works {
+    padding: 20px 20px;
+    gap: 20px;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .steps-container {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
+
+  #dishes {
+    margin: 0;
+    padding: 20px 20px;
+    gap: 20px;
+
+    .cards-container {
+      grid-template-columns: repeat(2, 45%);
+      row-gap: 15px;
+
+      .card-item {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+
+    .pagination {
+      gap: 15px;
+    }
+  }
+
+  #target {
+    padding: 20px 20px;
+    background-image: url("./assets/delivery-man.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+
+    .target-info {
+      gap: 20px;
+      background-color: rgba($color: #fffbf3, $alpha: 0.6);
+    }
+  }
+
+  #mobile {
+    padding: 20px 20px;
+
+    .discount {
+      gap: 20px;
+    }
+
+    .apps {
+      justify-content: space-between;
+    }
+    .mobile-app {
+      display: none;
+    }
+  }
+
+  footer {
+    padding: 20px 20px;
+    gap: 20px;
+
+    .contacts {
+      flex-direction: column;
+      padding: 20px 0;
+      gap: 10px;
+      bottom: 0;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+      a {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .hr {
+        display: none;
+      }
+    }
+
+    .footer-container {
+      gap: 20px;
+      flex-direction: column;
+
+      .footer-logo {
+        align-self: start;
+      }
+    }
+
+    .social-media {
+      justify-content: space-between;
+    }
+
+    .line {
+      padding: 0px;
+    }
+
+    .nav-link {
+      padding-left: 30px;
+      align-self: flex-start;
+    }
+  }
+}
