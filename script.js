@@ -19,10 +19,5 @@ function getStarted() {
 
 function showMenu() {
   let el = document.querySelector("nav");
-  
-  if (el.classList.contains("unvisible")){
-    el.classList.remove("unvisible");
-  } else {
-    el.classList.add("unvisible")
-  }
+  el.classList.toggle("unvisible");
 }
