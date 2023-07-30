@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+    <div class="main-container">
     <header>
       <div class="logo">
         <a href="index.html">
@@ -243,7 +244,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item computer-only">
+        <div class="card-item">
           <img src="./assets/salmon.png" alt="" class="food-img" />
           <div class="stars">
             <i class="fa-solid fa-star fill"></i>
@@ -265,7 +266,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item computer-only">
+        <div class="card-item">
           <img src="./assets/another-bowl.png" alt="" class="food-img" />
           <div class="stars">
             <i class="fa-solid fa-star fill"></i>
@@ -355,18 +356,20 @@
         <img src="assets/phone-app.png" alt="" />
       </div>
     </section>
-    <footer>
-      <div class="contacts /*computer-only*/">
-        <div class="contact-item">
-          <img src="./assets/email-icon.svg" alt="" />
-          <a href="mailto:">info@youremail.com</a>
-        </div>
-        <div class="hr"></div>
-        <div class="contact-item">
-          <img src="./assets/call-icon.svg" alt="" />
-          <a href="tel:+">+880 321 655 9985</a>
-        </div>
+    <div class="contacts-container">
+    <div class="contacts /*computer-only*/">
+      <div class="contact-item">
+        <img src="./assets/email-icon.svg" alt="" />
+        <a href="mailto:">info@youremail.com</a>
       </div>
+      <div class="hr"></div>
+      <div class="contact-item">
+        <img src="./assets/call-icon.svg" alt="" />
+        <a href="tel:+">+880 321 655 9985</a>
+      </div>
+    </div>
+  </div>
+    <footer>      
       <div class="footer-container">
         <div class="footer-item">
           <div class="footer-logo">
@@ -432,5 +435,6 @@
       </div>
     </footer>
     <script src="script.js" type="text/javascript"></script>
+    </div>
   </body>
 </html>

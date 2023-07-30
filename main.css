@@ -10,6 +10,11 @@ body {
   width: 100%;
 }
 
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 header {
   padding: 30px 135px;
   display: flex;
@@ -94,8 +99,8 @@ button {
 
 .active-link {
   color: #ffc12f;
-  -webkit-text-decoration: underline 3px;
-          text-decoration: underline 3px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ffc12f;
 }
 
 .logo {
@@ -149,7 +154,7 @@ button {
   width: 270px;
   height: 320px;
   border-radius: 10px;
-  border: 0.699px solid rgba(112, 112, 112, 0.2);
+  border: 1px solid rgba(112, 112, 112, 0.2);
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
@@ -189,8 +194,8 @@ button {
   color: #f9a755;
 }
 #dishes .cards-container .card-item:hover {
-  border: 2px solid #ffc12f;
-  box-shadow: -1px 0px 50px 5px rgba(34, 60, 80, 0.3);
+  border: 1px solid #ffc12f;
+  box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);
 }
 #dishes .cards-container .card-item .card-buttons {
   display: flex;
@@ -198,7 +203,7 @@ button {
 }
 #dishes .pagination {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 #dishes .circle {
   display: flex;
@@ -224,6 +229,7 @@ button {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 243px;
 }
 .footer-container .headline {
   color: white;
@@ -307,14 +313,20 @@ button {
   padding-left: 18px;
 }
 
+.contacts-container {
+  position: relative;
+}
+
 .contacts {
-  width: 100%;
-  padding: 65px 0;
+  width: 1170px;
+  padding: 55px 0;
   border-radius: 30px;
   background: var(--white, #fff);
-  box-shadow: 0px -10px 30px 10px rgba(0, 4, 7, 0.2);
-  position: relative;
-  bottom: 115px;
+  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.24);
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -124px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -428,7 +440,7 @@ button {
   width: 40px;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0px 0px 25px 6px rgba(34, 60, 80, 0.3);
+  box-shadow: drop-shadow(0px 0px 20px rgba(199, 199, 199, 0.25));
 }
 #main .get-started {
   width: 146px;
@@ -465,6 +477,9 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+#how-it-works .steps-container .step-item:nth-child(2) {
+  margin-top: 50px;
 }
 
 #mobile {
@@ -582,6 +597,9 @@ button {
     gap: 30px;
     flex-direction: column;
   }
+  #how-it-works .steps-container .step-item:nth-child(n) {
+    margin: 0;
+  }
   #dishes {
     margin: 0;
     padding: 20px 20px;
@@ -626,6 +644,7 @@ button {
     gap: 20px;
   }
   footer .contacts {
+    width: 50%;
     flex-direction: column;
     padding: 20px 0;
     gap: 10px;

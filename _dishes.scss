@@ -19,7 +19,7 @@
       width: 270px;
       height: 320px;
       border-radius: 10px;
-      border: 0.699px solid rgba(112, 112, 112, 0.2);
+      border: 1px solid rgba(112, 112, 112, 0.2);
       padding: 15px 20px;
       display: flex;
       flex-direction: column;
@@ -65,8 +65,8 @@
       }
 
       &:hover {
-        border: 2px solid $accent-color;
-        box-shadow: -1px 0px 50px 5px rgba(34, 60, 80, 0.3);
+        border: 1px solid $accent-color;
+        box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);;
       }
 
       .card-buttons {
@@ -78,7 +78,7 @@
 
   .pagination {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
 
   .circle {

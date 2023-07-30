@@ -115,6 +115,10 @@
     .steps-container {
       gap: 30px;
       flex-direction: column;
+
+      .step-item:nth-child(n) {
+        margin: 0;
+      }
     }
   }
 
@@ -171,6 +175,7 @@
     gap: 20px;
 
     .contacts {
+      width: 50%;
       flex-direction: column;
       padding: 20px 0;
       gap: 10px;

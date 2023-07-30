@@ -15,6 +15,11 @@ body {
   width: 100%;
 }
 
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto
+}
+
 header {
   padding: 30px 135px;
   display: flex;
@@ -99,7 +104,8 @@ button {
 
 .active-link {
   color: $accent-color;
-  text-decoration: underline 3px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $accent-color;
 }
 
 .logo {
