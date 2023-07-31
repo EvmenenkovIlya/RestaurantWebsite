@@ -205,6 +205,12 @@ button {
   display: flex;
   gap: 20px;
 }
+#dishes .pagination .btn {
+  cursor: pointer;
+}
+#dishes .pagination .arrow-right {
+  order: 1;
+}
 #dishes .circle {
   display: flex;
   justify-content: center;
