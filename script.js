@@ -111,7 +111,7 @@ const cards = [
   {
     id: 16,
     img : "./assets/another-bowl.png",
-    name: "Another-bowl",
+    name: "Another-bowl page 2",
     description: "Lorem Ipsum is simply dummy text of<br>the printing and typesetting....",
     price: "5.75"
   },
@@ -167,7 +167,7 @@ const cards = [
   {
     id: 24,
     img : "./assets/another-bowl.png",
-    name: "Another-bowl",
+    name: "Another-bowl page 3",
     description: "Lorem Ipsum is simply dummy text of<br>the printing and typesetting....",
     price: "5.75"
   },
@@ -195,7 +195,7 @@ function showMenu() {
 }
 
 function createCards(start) {
-  const cardsForRender = cards.filter((item, i) => (i >= start && i < start + 8));
+  const cardsForRender = cards.filter((item, i) => ( i >= ((start - 1) * 8)  && i < start * 8));
   const renderCards = cardsForRender.map( item => `
   <div class="card-item">
     <img src=${item.img} class="food-img" />
@@ -247,8 +247,8 @@ function getPageWithNumber() {
   var activeButton = event.target;
   activeButton.classList.add('active');
   clearOldCards();
-  renderCards(Number(activeButton.textContent) - 1);
+  renderCards(Number(activeButton.textContent));
 }
 
 
-renderCards(0);
+renderCards(1);
